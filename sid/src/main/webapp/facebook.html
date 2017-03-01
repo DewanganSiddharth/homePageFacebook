@@ -10,6 +10,19 @@
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link href="assets/css/facebook.css" rel="stylesheet">
+        
+        <script>
+        $('.SeeMore2').click(function(){
+    		var $this = $(this);
+    		$this.toggleClass('SeeMore2');
+    		if($this.hasClass('SeeMore2')){
+    			$this.text('See More');			
+    		} else {
+    			$this.text('See Less');
+    		}
+    	});
+        </script>
+        
     </head>
     
     <body>
@@ -56,13 +69,13 @@
 								<a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="glyphicon glyphicon-user"></i><span class="badge">9</span></a>
+								<a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-user"></i><span class="badge">9</span></a>
 							  </li>
 							    <li>
-								<a href="#"><i class="glyphicon glyphicon-envelope"></i><span class="badge">3</span></a>
+								<a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-envelope"></i><span class="badge">3</span></a>
 							  </li>
 							  <li>
-								<a href="#"><i class="glyphicon glyphicon-cloud"></i><span class="badge">5</span></a>
+								<a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-cloud"></i><span class="badge">5</span></a>
 							  </li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
@@ -91,7 +104,7 @@
 				
 								
 									<!-- sidebar -->
-				 	<div class="column col-sm-2 col-xs-2"  style="background-color: #E9EAED">
+				 	<div class="column col-sm-2 col-xs-2 "   style="background-color: #E9EAED">
 				   
 						 <ul class="nav">
 							<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
@@ -101,15 +114,45 @@
 							<li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i>User Name</a></li>
 							<li><a href="#stories"><i class="glyphicon glyphicon-list"></i> News Feed</a></li>
 							<li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Message</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Groups</a></li>
+						</ul>	
+							<b>Explore</b>
+							<ul class="nav hidden-xs see-more" id="xs-menu" >
 							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Events</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Pages</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Friend List</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Pokes</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> On This Day</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Games</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Suggested/Edit</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Create</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Groups</a></li>
+							<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> Pages</a></li>
+											</ul>
+							
+							<div class="accordion-group">
+    							<div id="collapseTwo" class="accordion-body collapse">
+     								 <div class="accordion-inner">
+      									<ul class="nav hidden-xs see-more" id="xs-menu">
+      	    			  					<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> Friend List</a></li>
+											<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> Pokes</a></li>
+											<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> On This Day</a></li>
+											<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Find Friends</a></li>
+											<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> Games</a></li>
+											<li><a href="siteUnderConstruction.html"><i class="glyphicon glyphicon-refresh"></i> Suggested/Edit</a></li>
+										</ul>	
+      
+     								 </div>
+    							</div>
+    							<div class="accordion-heading">
+      								<ul class="nav hidden-xs see-more" id="xs-menu">
+      								<li><a class="accordion-toggle" id = "see-more" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> See More ...
+      								</li>
+      								</ul>
+      								</a>
+    							</div>
+  							</div>
+							<br>
+							
+							<b>Create</b>
+							<br>
+							<ul class="nav hidden-xs" id="xs-menu">
+							<li><a href="siteUnderConstruction.html">Ad</a></li>
+							<li><a href="siteUnderConstruction.html">Page</a></li>
+							<li><a href="#">Group</a></li>
+							<li><a href="#">Event</a></li>
 							
 						</ul>
 						<!-- <ul class="list-unstyled hidden-xs" id="sidebar-footer" style="background-color: #E9EAED">
@@ -212,54 +255,10 @@
 								  <!-- main col center -->
 								  <div class="col-sm-3 col-xs-3">
 									   
-										<div class="well"> 
-										   <form class="form">
-											<h4>Sign-up</h4>
-											<div class="input-group text-center">
-											<input class="form-control input-lg" placeholder="Enter your email address" type="text">
-											  <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
-											</div>
-										  </form>
-										</div>
-							  
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
-										  <div class="panel-body">
-											<p><img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
-											<div class="clearfix"></div>
-											<hr>
-											Design, build, test, and prototype 
-		using Bootstrap in real-time from your Web browser. Bootply combines the
-		 power of hand-coded HTML, CSS and JavaScript with the benefits of 
-		responsive design using Bootstrap. Find and showcase Bootstrap-ready 
-		snippets in the 100% free Bootply.com code repository.
-										  </div>
-									   </div>
-									
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Stackoverflow</h4></div>
-										  <div class="panel-body">
-											<img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a>
-											<div class="clearfix"></div>
-											<hr>
-											
-											<p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.</p>
-											
-											<hr>
-											<form>
-											<div class="input-group">
-											  <div class="input-group-btn">
-											  <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-											  </div>
-											  <input class="form-control" placeholder="Add a comment.." type="text">
-											</div>
-											</form>
-											
-										  </div>
-									   </div>
+								
 
 									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Portlet Heading</h4></div>
+										 <div class="panel-heading"><a href="siteUnderConstruction.html" class="pull-right">Under Construction</a> <h4>Trending</h4></div>
 										  <div class="panel-body">
 											<ul class="list-group">
 											<li class="list-group-item">Modals</li>
@@ -270,6 +269,8 @@
 									   </div>
 									
 									   <div class="panel panel-default">
+										<div class="panel-heading"><a href="siteUnderConstruction.html" class="pull-right">Under Construction</a> <h4>Suggested Pages</h4></div>
+										 
 										<div class="panel-thumbnail"><img src="assets/img/bg_4.jpg" class="img-responsive"></div>
 										<div class="panel-body">
 										  <p class="lead">Social Good</p>
@@ -288,78 +289,23 @@
 								  
 								  
 								   <!-- main col right -->
-								  <div class="col-sm-2 col-xs-2">
+								  <div class="col-sm-2 col-xs-2" >
 									   
-										<div class="well"> 
-										   <form class="form">
-											<h4>Sign-up</h4>
-											<div class="input-group text-center">
-											<input class="form-control input-lg" placeholder="Enter your email address" type="text">
-											  <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
-											</div>
-										  </form>
-										</div>
-							  
 									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
-										  <div class="panel-body">
-											<p><img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
-											<div class="clearfix"></div>
-											<hr>
-											Design, build, test, and prototype 
-		using Bootstrap in real-time from your Web browser. Bootply combines the
-		 power of hand-coded HTML, CSS and JavaScript with the benefits of 
-		responsive design using Bootstrap. Find and showcase Bootstrap-ready 
-		snippets in the 100% free Bootply.com code repository.
-										  </div>
-									   </div>
-									
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Stackoverflow</h4></div>
-										  <div class="panel-body">
-											<img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a>
-											<div class="clearfix"></div>
-											<hr>
-											
-											<p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.</p>
-											
-											<hr>
-											<form>
-											<div class="input-group">
-											  <div class="input-group-btn">
-											  <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-											  </div>
-											  <input class="form-control" placeholder="Add a comment.." type="text">
-											</div>
-											</form>
-											
-										  </div>
-									   </div>
-
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Portlet Heading</h4></div>
+										 <div class="panel-heading"><h4>Online Friends</h4></div>
 										  <div class="panel-body">
 											<ul class="list-group">
-											<li class="list-group-item">Modals</li>
-											<li class="list-group-item">Sliders / Carousel</li>
-											<li class="list-group-item">Thumbnails</li>
+											<li class="list-group-item">Varun Jaiswal</li>
+											<li class="list-group-item">Vishal Bhurangi</li>
+											<li class="list-group-item">Shubham Sharma</li>
+											<li class="list-group-item">Umesh S</li>
+											<li class="list-group-item">Shubham Kandoi</li>
+											
 											</ul>
 										  </div>
 									   </div>
 									
-									   <div class="panel panel-default">
-										<div class="panel-thumbnail"><img src="assets/img/bg_4.jpg" class="img-responsive"></div>
-										<div class="panel-body">
-										  <p class="lead">Social Good</p>
-										  <p>1,200 Followers, 83 Posts</p>
-										  
-										  <p>
-											<img src="assets/img/photo.jpg" height="28px" width="28px">
-											<img src="assets/img/photo.png" height="28px" width="28px">
-											<img src="assets/img/photo_002.jpg" height="28px" width="28px">
-										  </p>
-										</div>
-									  </div>
+									   
 									
 								  </div>
 								  
@@ -440,7 +386,14 @@
 				$('#lg-menu').toggleClass('hidden-xs').toggleClass('visible-xs');
 				$('#xs-menu').toggleClass('visible-xs').toggleClass('hidden-xs');
 				$('#btnShow').toggle();
+				
 			});
+			
+			 $("#see-more").click(function() {
+		            $(this).hide();
+		        });
         });
+        
+        
         </script>
 </body></html>
